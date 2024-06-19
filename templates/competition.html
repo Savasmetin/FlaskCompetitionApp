@@ -1,0 +1,127 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<br>
+<br><br><br>
+
+    <br><br><br>
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column" style="background-color: rgb(168, 168, 168);">
+        <h1>Yapay Zeka Bilgi Testi</h1>
+        <form action="/submit" method="post" id="quiz">
+            <div class="question">
+                <p class="question-title">1. Bir bilgisayar bir resmi tanıyabilir mi?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q1" value="Evet"> Evet</label>
+                    <label><input type="radio" name="q1" value="Hayır"> Hayır</label>
+                    <label><input type="radio" name="q1" value="Belki"> Belki</label>
+                    <label><input type="radio" name="q1" value="Bilmiyorum"> Bilmiyorum</label>
+                </div>
+            </div>
+            <br>
+            <div class="question">
+                <p class="question-title">2. Yapay zeka robotlar nasıl konuşmayı öğrenir?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q2" value="Veri ile"> Veri ile</label>
+                    <label><input type="radio" name="q2" value="Oyun oynayarak"> Oyun oynayarak</label>
+                    <label><input type="radio" name="q2" value="Kitap okuyarak"> Kitap okuyarak</label>
+                    <label><input type="radio" name="q2" value="Uçarak"> Uçarak</label>
+                </div>
+            </div>
+            <br>
+            <div class="question">
+                <p class="question-title">3. Bilgisayarlar neyi görür?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q3" value="Piksel"> Piksel</label>
+                    <label><input type="radio" name="q3" value="Müzik"> Müzik</label>
+                    <label><input type="radio" name="q3" value="Koku"> Koku</label>
+                    <label><input type="radio" name="q3" value="Tat"> Tat</label>
+                </div>
+            </div>
+            <br>
+            <div class="question">
+                <p class="question-title">4. Chatbot nedir?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="Konuşan bilgisayar programı"> Konuşan bilgisayar programı</label>
+                    <label><input type="radio" name="q4" value="Kedi türü"> Kedi türü</label>
+                    <label><input type="radio" name="q4" value="Uzay aracı"> Uzay aracı</label>
+                    <label><input type="radio" name="q4" value="Çiçek türü"> Çiçek türü</label>
+                </div>
+            </div>
+            <br>
+            <div class="question">
+                <p class="question-title">5. Bir yapay zeka nasıl şarkı söylemeyi öğrenir?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q5" value="Veri ile"> Veri ile</label>
+                    <label><input type="radio" name="q5" value="Rüyada"> Rüyada</label>
+                    <label><input type="radio" name="q5" value="Arkadaşlarıyla"> Arkadaşlarıyla</label>
+                    <label><input type="radio" name="q5" value="Dans ederek"> Dans ederek</label>
+                </div>
+            </div>
+            <br>
+            <div class="question">
+                <p class="question-title">6. NLP ne anlama gelir?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q6" value="Doğal Dil İşleme"> Doğal Dil İşleme</label>
+                    <label><input type="radio" name="q6" value="Yeni Dil Öğrenme"> Yeni Dil Öğrenme</label>
+                    <label><input type="radio" name="q6" value="Notalı Lamba Projesi"> Notalı Lamba Projesi</label>
+                    <label><input type="radio" name="q6" value="Neşeli Limon Partisi"> Neşeli Limon Partisi</label>
+                </div>
+            </div>
+            <br>
+            <div class="question">
+                <p class="question-title">7. Gözlük takan bir robot hangi alanı kullanır?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q7" value="Bilgisayar Görüşü"> Bilgisayar Görüşü</label>
+                    <label><input type="radio" name="q7" value="NLP"> NLP</label>
+                    <label><input type="radio" name="q7" value="Matematik"> Matematik</label>
+                    <label><input type="radio" name="q7" value="Fizik"> Fizik</label>
+                </div>
+            </div>
+            <br>
+            <div class="question">
+                <p class="question-title">8. Bir bilgisayar konuşmaları nasıl anlayabilir?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q8" value="NLP"> NLP</label>
+                    <label><input type="radio" name="q8" value="Bilgisayar Görüşü"> Bilgisayar Görüşü</label>
+                    <label><input type="radio" name="q8" value="Kimya"> Kimya</label>
+                    <label><input type="radio" name="q8" value="Astronomi"> Astronomi</label>
+                </div>
+            </div>
+            <br>
+            <div class="question">
+                <p class="question-title">9. Bir yapay zeka nasıl çizim yapabilir?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q9" value="Veri ve Algoritmalar ile"> Veri ve Algoritmalar ile</label>
+                    <label><input type="radio" name="q9" value="Sihirli Kalem"> Sihirli Kalem</label>
+                    <label><input type="radio" name="q9" value="Bilgisayar Görüşü"> Bilgisayar Görüşü</label>
+                    <label><input type="radio" name="q9" value="NLP"> NLP</label>
+                </div>
+            </div>
+            <br>
+            <div class="question">
+                <p class="question-title">10. Bir yapay zeka hangi duyuları kullanabilir?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q10" value="Görme ve Dinleme"> Görme ve Dinleme</label>
+                    <label><input type="radio" name="q10" value="Tat ve Koku"> Tat ve Koku</label>
+                    <label><input type="radio" name="q10" value="Tat ve Görme"> Tat ve Görme
+
+                        <button type="button" onclick="checkAnswers()">Check</button>
+                    </form>
+                    <div id="score"></div>
+                </div>
+            </div>
+        
+            <script>
+                function checkAnswers() {
+                    var form = document.getElementById('quiz');
+                    form.submit();
+                }
+                
+            </script>
+
+        <h1>{{Score}}</h1>
+{% endblock %}
+
+
+
